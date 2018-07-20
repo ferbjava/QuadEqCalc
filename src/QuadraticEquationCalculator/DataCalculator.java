@@ -4,6 +4,7 @@ public class DataCalculator {
 	private double a;
 	private double b;
 	private double c;
+	private double delta;
 	
 	public DataCalculator(double a, double b, double c) {
 		setA(a);
@@ -12,11 +13,15 @@ public class DataCalculator {
 	}
 
 	public double discriminant(){
-		return b*b-4*a*c;
+		delta=b*b-4*a*c;
+		return delta;
+	}
+
+	public void calculate() {
+		// TODO Auto-generated method stub
+		
 	}
 	
-	
-
 	public double getA() {
 		return a;
 	}
@@ -39,10 +44,5 @@ public class DataCalculator {
 
 	public void setC(double c) {
 		this.c = c;
-	}
-
-	public void calculate() {
-		// TODO Auto-generated method stub
-		
 	}
 }
